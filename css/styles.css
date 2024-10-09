@@ -1,0 +1,42 @@
+.menuCSS3 ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menuCSS3 a{
+    display: block;
+    padding: 1em 2em;/* Ajuste del padding */
+    background-color: aquamarine;/* Color para el menu */
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s;/* Transicion suave para el hover */
+}
+
+.menuCSS3 a:hover{
+    background-color: rgb(116, 190, 233);
+}
+
+.menuCSS3 ul li{
+    position: relative;
+}
+
+.menuCSS3 ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: blueviolet;
+}
+
+.menuCSS3 ul li:hover ul{
+    display: block;
+}
+
+.menuCSS3 ul li ul li a {
+    padding: 1em;
+}
